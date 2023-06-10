@@ -21,6 +21,15 @@ int getmin(int a[], int n){
     }
 return min;
 }
+
+void update(int a[], int n){
+    a[0]=100;
+    cout<<"priniting from update function"<<endl;
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
+
+}
 int main(){
     /*int a[5]={1,2,3,4,5};
     for(int i=0;i<5;i++){
@@ -39,6 +48,12 @@ int main(){
         cin>>array[i];
     }
     cout<<"Mximum element: "<<getmax(array, size)<<" ";
-        cout<<"Minimum element: "<<getmin(array, size)<<" ";
+    cout<<"Minimum element: "<<getmin(array, size)<<" ";
+    update(array, size);
+
+    cout<<"priniting from main function"<<endl;
+    for(int i=0;i<size;i++){
+        cout<<array[i]<<" ";
+    }
 
 }  
