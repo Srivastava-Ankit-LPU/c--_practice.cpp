@@ -4,7 +4,7 @@ using namespace std;
 void selection(int arr[], int n)  
 {   
       
-    for (int i = 0; i < n-1; i++)    // One by one move boundary of unsorted subarray  
+    for (int i = 0; i < n-1; i++) 
     {
         int minindex=i;
         for(int j=i+1;j<n;j++){
